@@ -10,17 +10,33 @@ html, body {
     flex-direction: column;
 }
 
+p {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+h1 {
+   font-family: 'Boldonse', 'Courier New', Courier, monospace
+}
+
 h2 {
     padding-top: 5px;
     padding-bottom: 10px;
+    font-family: 'Boldonse', 'Courier New', Courier, monospace
 }
 
 h3 {
     padding-left: 10px;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
 h4 {
     padding-left: 20px;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
 .top {
@@ -28,6 +44,11 @@ h4 {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+.seperator {
+    color: #CBA052;
+    background-color: #CBA052;
 }
 
 .buttonContainer {
@@ -64,10 +85,18 @@ button a {
 
 .introP {
     margin-bottom: 10px;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+.videoHolder {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 li {
     margin-left: 50px;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
 .bottom {
@@ -80,8 +109,25 @@ li {
 
 .bottomFooter {
     display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
-img {
+.footerInfo {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.socialMediaIcons :hover{
+    background-color: #CBA052;
+}
+
+.footerInfo p {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+form {
+    
 }

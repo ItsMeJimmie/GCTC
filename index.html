@@ -6,6 +6,13 @@
     <title>GCTC</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Sprite-0002.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@-14,100..1000&family=Boldonse&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c140881aff.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header class="top">
@@ -21,7 +28,9 @@
         </div>
 
     </header>
-
+    <div class="seperator">
+            <p>HIDDEN MESSAGE: Hi Nick and Kristin!!!</p>
+    </div>
     <main class="middle">
 
         <h2 id="i">Introduction</h2>
@@ -37,6 +46,12 @@
                 <li>Upload your semester scehdule and build the quickest route between each class</li>
                 <li>Navigate through different parts of the 3D map to look at important university landmarks.</li>
             </ul>
+
+            <div class="videoHolder">
+                <video width="640" height="480" controls>
+                    <source src="2025-03-20_09-53-30.mp4" type="video/mp4">
+                </video>
+            </div>
 
         <h2 id="gp">Group Report</h2>
             <h3>Documents</h3>
@@ -67,12 +82,36 @@
                 <li><a href="/presentations/RequirementsPresentationTemplate.pptx">Requirements Presentation</a></li>
             </ul>
         <h2 id="c">Contact</h2>
-            <p>Want to contact us? Don't. This is a school project that might become something actually decent later.</p>
+            <p>Want to contact us?</p>
+            
+            <form action="https://formspree.io/f/mpwppzdj" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                
+                <button type="submit">Send</button>
+            </form>
     </main>
 
     <footer class="bottom">
         <div class="bottomFooter">
-            <p>GCTC (Generic Campus Tour Company)</p>
+            <div class="footerInfo">
+
+                <h5>GCTC (Generic Campus Tour Company)</h5>
+                <p>Terms | Privacy Policy | Accessibility Commitment</p>
+                <p>© 2025, GCTC, All Rights Reserved</p>
+                <div class="socialMediaIcons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-reddit"></i>
+                </div>
+
+            </div>
             <img src="Sprite-0002.png" alt="LOGO">
         </div>
     </footer>
