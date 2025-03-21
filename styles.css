@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -130,4 +131,24 @@ li {
 
 form {
     
+}
+
+.individualReports li {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-bottom: 12px;
+}
+
+.jimmieIndividualReports li {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-bottom: 12px;
+}
+
+.kristinIndividualReports li {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-bottom: 12px; 
+}
+
+.nickIndividualReports li {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-bottom: 12px;
 }
