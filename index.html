@@ -14,17 +14,23 @@
     <script src="https://kit.fontawesome.com/c140881aff.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <header class="top">
 
-        <h1>Generic Campus Tour Company</h1>
+        <div class="topGroup">
 
-        <div class="buttonContainer">
-            <button class="introduction"><a href=#i>Introduction</a></button>
-            <button class="groupReport"><a href=#gp>Group Report</a></button>
-            <button class="individualReport"><a href=#ir>Individual Reports</a></button>
-            <button class="presentations"><a href=#p>Presentations</a></button>
-            <button class="contact"><a href=#c>Contact</a></button>
+            <img src="Sprite-0003.png" alt="LOGO" class="headerImage">
+
+            <h1>GCTC</h1>
+
+            <div class="buttonContainer">
+                <button class="introButton"><a href=#i>Introduction</a></button>
+                <button class="groupReport"><a href=#gp>Group Report</a></button>
+                <button class="individualReport"><a href=#ir>Individual Reports</a></button>
+                <button class="presentations"><a href=#p>Presentations</a></button>
+                <button class="contact"><a href=#c>Contact</a></button>
+            </div>
         </div>
 
     </header>
@@ -47,7 +53,7 @@
                 <li>Navigate through different parts of the 3D map to look at important university landmarks.</li>
             </ul>
 
-            <div class="videoHolder">
+            <div class="videoHolder" id="video">
                 <video width="640" height="480" controls>
                     <source src="2025-03-20_09-53-30.mp4" type="video/mp4">
                 </video>
@@ -90,19 +96,19 @@
                 <li><a href="/presentations/RequirementsPresentationTemplate.pptx">Requirements Presentation</a></li>
             </ul>
         <h2 id="c">Contact</h2>
-            <p>Want to contact us?</p>
+            <p style="padding-bottom: 10px;">Want to contact us?</p>
             
-            <form action="https://formspree.io/f/mpwppzdj" method="POST">
-                <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                </label>
-                
-                <button type="submit">Send</button>
+            <form action="https://formspree.io/f/mpwppzdj" method="POST" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit">Send Message</button>
             </form>
     </main>
 
@@ -120,8 +126,10 @@
                 </div>
 
             </div>
-            <img src="Sprite-0002.png" alt="LOGO">
+            <img src="Sprite-0003.png" alt="LOGO">
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
