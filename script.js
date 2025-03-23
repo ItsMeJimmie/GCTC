@@ -8,3 +8,4 @@ function adjustPadding() {
 
 window.addEventListener('load', adjustPadding);
 window.addEventListener('resize', adjustPadding);
+
