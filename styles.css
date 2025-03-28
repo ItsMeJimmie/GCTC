@@ -25,6 +25,11 @@ h2 {
     font-family: 'Boldonse', 'Courier New', Courier, monospace
 }
 
+#first {
+    text-align: center;
+    font-family: 'Boldonse', 'Courier New', Courier, monospace
+}
+
 h3 {
     padding-left: 10px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
@@ -78,7 +83,7 @@ h5 {
 }
 
 .buttonContainer button {
-    background-color: white;
+    background-color: transparent;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -106,13 +111,18 @@ button a {
     background-color: #F2F1F0;
 }
 
-.introManager {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.nextSection {
+    flex: 1;
+    text-align: left;
+    background-color: #F2F1F0;
+}
+
+.nextSectionContainer {
+    padding: 50px;
 }
 
 .introP {
+    text-align: center;
     margin-bottom: 10px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
 }
@@ -126,8 +136,12 @@ button a {
 }
 
 li {
-    margin-left: 50px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+.bulletPoints {
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .bottom {
@@ -203,6 +217,10 @@ textarea {
     height: 100px;
 }
 
+ul {
+    padding-left: 50px;
+}
+
 .individualReports li {
     font-family: 'Lato', 'Courier New', Courier, monospace;
     padding-bottom: 12px;
@@ -260,7 +278,7 @@ img {
     .nav-menu button {
         width: 100%;
         text-align: left;
-        background: white;
+        background: transparent;
         border: none;
         padding: 10px;
         color: black;
@@ -283,7 +301,7 @@ img {
 .universities {
     margin-left: -50px;
     margin-right: -50px;
-    margin-top: 180px;
+    margin-top: 200px;
     padding: 10px 0px;
     background-color: #F2F1F0;
     overflow: hidden;
@@ -293,13 +311,13 @@ img {
 
 .uniTitle {
     text-align: center;
-    font-family: 'Lato', 'Courier New', Courier, monospace;
+    font-family: 'Boldonse', 'Courier New', Courier, monospace;
 }
 
 .scrolling-container {
     display: flex;
-    gap: 20px;
-    animation: scrollLeft 13s linear infinite;
+    gap: 130px;
+    animation: scrollLeft 10s linear infinite;
     width: max-content; 
 }
 
@@ -316,4 +334,15 @@ img {
     to {
         transform: translateX(-50%);
     }
+}
+
+#i {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.missionStatement {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
 }

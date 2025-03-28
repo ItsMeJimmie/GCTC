@@ -29,11 +29,11 @@
             <div class="hamburger" onclick="toggleMenu()">☰</div>
 
             <div class="buttonContainer nav-menu">
-                <button class="introButton"><a href=#i>Introduction</a></button>
-                <button class="groupReport"><a href=#gp>Group Report</a></button>
-                <button class="individualReport"><a href=#ir>Individual Reports</a></button>
-                <button class="presentations"><a href=#p>Presentations</a></button>
-                <button class="contact"><a href=#c>Contact</a></button>
+                <button class="introButton"><a href=#i>Introduction </a><i class="fa-solid fa-chevron-down"></i></button>
+                <button class="groupReport"><a href=#gp>Group Report </a><i class="fa-solid fa-chevron-down"></i></button>
+                <button class="individualReport"><a href=#ir>Individual Reports </a><i class="fa-solid fa-chevron-down"></i></button>
+                <button class="presentations"><a href=#p>Presentations </a><i class="fa-solid fa-chevron-down"></i></button>
+                <button class="contact"><a href=#c>Contact </a><i class="fa-solid fa-chevron-down"></i></button>
             </div>
         </div>
 
@@ -44,14 +44,27 @@
     </div>
     
     <main class="middle">
-
-        <div class="introManager">
             
             <div>
+                <h2 id="first">A New University Navigation System</h2>
+                <p class="missionStatement">Empowering students to succeed, thrive, and persist 
+                    throughout their academic journey by providing an innovative, 
+                    inclusive, and interactive 3D campus mapping navigation system.</p>
+
                 <h2 id="i">Introduction</h2>
-                <p class="introP">Our company is called Generic Campus Tour Company (GCTC), and our goal is to help you
-                    navigate the Wright State University Main Dayton campus. Our program aims to use the Godot game engine
-                    to build a fully fleshed out 3D map to produce a 3D campus navigation system. 
+                <p class="introP">
+                    
+                    Our navigation system addresses the challenge of 
+                    inadequate campus navigation by creating an interactive 
+                    room-to-room navigation map for the Wright State University 
+                    Dayton Campus.
+                    
+                    Our company, Generic Campus Tour Company (GCTC), is dedicated 
+                    to the 
+                    
+                    Our program aims to utilize the Godot game engine
+                    to build a fully fleshed out 3D map to provide the groundwork for the 3D campus 
+                    navigation system. 
 
                     Our product will allow you to do three main things which are as follows. 
                 </p>
@@ -62,12 +75,6 @@
                     <li>Navigate through different parts of the 3D map to look at important university landmarks.</li>
                 </ul>
             </div>
-
-            <div>
-                <img src="image.png" alt="Group Photo" class="groupPhoto">
-            </div>
-
-        </div>
 
         <div class="universities">
             <h5 class="uniTitle">Universities We Collaborate With</h5>
@@ -83,6 +90,7 @@
                 <img src="universities/Wright-State-U.png" alt="Image 3">
                 <img src="universities/Wright-State-U.png" alt="Image 4">
                 <img src="universities/Wright-State-U.png" alt="Image 5">
+                
             </div>
         </div>
 
@@ -92,6 +100,10 @@
                 </video>
             </div>
 
+    </main>
+
+    <section class="nextSection">
+        <div class="nextSectionContainer">
         <h2 id="gp">Group Report</h2>
             <h3>Documents</h3>
             <ul class="individualReports">
@@ -143,25 +155,27 @@
             
                 <button type="submit">Send Message</button>
             </form>
-    </main>
-
-    <footer class="bottom">
-        <div class="bottomFooter">
-            <div class="footerInfo">
-
-                <h5>GCTC (Generic Campus Tour Company)</h5>
-                <p>Terms | Privacy Policy | Accessibility Commitment</p>
-                <p>© 2025, GCTC, All Rights Reserved</p>
-                <div class="socialMediaIcons">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-reddit"></i>
-                </div>
-
             </div>
-            <img src="Sprite-0003.png" alt="LOGO">
-        </div>
-    </footer>
+
+        <footer class="bottom">
+            <div class="bottomFooter">
+                <div class="footerInfo">
+
+                    <h5>GCTC (Generic Campus Tour Company)</h5>
+                    <p>Terms | Privacy Policy | Accessibility Commitment</p>
+                    <p>© 2025, GCTC, All Rights Reserved</p>
+                    <div class="socialMediaIcons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-reddit"></i>
+                    </div>
+
+                </div>
+                <img src="Sprite-0003.png" alt="LOGO">
+            </div>
+        </footer>
+
+    </section>
 
     <script src="script.js"></script>
 </body>
