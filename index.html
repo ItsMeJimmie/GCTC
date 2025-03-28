@@ -24,7 +24,11 @@
 
             <h1>GCTC</h1>
 
-            <div class="buttonContainer">
+            <div class="spacer"></div>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+            <div class="buttonContainer nav-menu">
                 <button class="introButton"><a href=#i>Introduction</a></button>
                 <button class="groupReport"><a href=#gp>Group Report</a></button>
                 <button class="individualReport"><a href=#ir>Individual Reports</a></button>
@@ -41,19 +45,46 @@
     
     <main class="middle">
 
-        <h2 id="i">Introduction</h2>
-            <p class="introP">Our company is called Generic Campus Tour Company (GCTC), and our goal is to help you
-                navigate the Wright State University Main Dayton campus. Our program aims to use the Godot game engine
-                to build a fully fleshed out 3D map to produce a 3D campus navigation system. 
+        <div class="introManager">
+            
+            <div>
+                <h2 id="i">Introduction</h2>
+                <p class="introP">Our company is called Generic Campus Tour Company (GCTC), and our goal is to help you
+                    navigate the Wright State University Main Dayton campus. Our program aims to use the Godot game engine
+                    to build a fully fleshed out 3D map to produce a 3D campus navigation system. 
 
-                Our product will allow you to do three main things which are as follows. 
-            </p>
+                    Our product will allow you to do three main things which are as follows. 
+                </p>
 
-            <ul class="bulletPoints">
-                <li>Enter in two locations and get the quickest route between them.</li>
-                <li>Upload your semester scehdule and build the quickest route between each class</li>
-                <li>Navigate through different parts of the 3D map to look at important university landmarks.</li>
-            </ul>
+                <ul class="bulletPoints">
+                    <li>Enter in two locations and get the quickest route between them.</li>
+                    <li>Upload your semester scehdule and build the quickest route between each class</li>
+                    <li>Navigate through different parts of the 3D map to look at important university landmarks.</li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="image.png" alt="Group Photo" class="groupPhoto">
+            </div>
+
+        </div>
+
+        <div class="universities">
+            <h5 class="uniTitle">Universities We Collaborate With</h5>
+            <div class="scrolling-container">
+                <img src="universities/Wright-State-U.png" alt="Image 1">
+                <img src="universities/Wright-State-U.png" alt="Image 2">
+                <img src="universities/Wright-State-U.png" alt="Image 3">
+                <img src="universities/Wright-State-U.png" alt="Image 4">
+                <img src="universities/Wright-State-U.png" alt="Image 5">
+
+                <img src="universities/Wright-State-U.png" alt="Image 1">
+                <img src="universities/Wright-State-U.png" alt="Image 2">
+                <img src="universities/Wright-State-U.png" alt="Image 3">
+                <img src="universities/Wright-State-U.png" alt="Image 4">
+                <img src="universities/Wright-State-U.png" alt="Image 5">
+            </div>
+        </div>
 
             <div class="videoHolder" id="video">
                 <video width="640" height="480" controls>

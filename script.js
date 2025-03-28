@@ -9,3 +9,6 @@ function adjustPadding() {
 window.addEventListener('load', adjustPadding);
 window.addEventListener('resize', adjustPadding);
 
+function toggleMenu() {
+    document.querySelector(".nav-menu").classList.toggle("show");
+}

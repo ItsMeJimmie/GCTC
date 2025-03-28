@@ -63,6 +63,10 @@ h5 {
     margin-right: 20px;
 }
 
+.spacer {
+    padding-right: 350px;
+}
+
 .seperator {
     color: #CBA052;
     background-color: #CBA052;
@@ -100,6 +104,12 @@ button a {
     text-align: left;
     padding: 50px;
     background-color: #F2F1F0;
+}
+
+.introManager {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .introP {
@@ -216,4 +226,94 @@ textarea {
 img {
     height: 128px;
     width: 128px;
+}
+
+/* Default: Show navigation */
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #046A38;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-menu button {
+        width: 100%;
+        text-align: left;
+        background: white;
+        border: none;
+        padding: 10px;
+        color: black;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+
+.groupPhoto {
+    height: 320px;
+    width: 320px;
+}
+
+.universities {
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: 180px;
+    padding: 10px 0px;
+    background-color: #F2F1F0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.uniTitle {
+    text-align: center;
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+}
+
+.scrolling-container {
+    display: flex;
+    gap: 20px;
+    animation: scrollLeft 13s linear infinite;
+    width: max-content; 
+}
+
+
+.scrolling-container img {
+    height: 80px; 
+    width: auto;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
