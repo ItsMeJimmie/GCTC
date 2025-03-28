@@ -127,12 +127,27 @@ button a {
     font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
+.introSection {
+    background-color: #2931360f;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
 .videoHolder {
     display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
     position: relative;
     z-index: 1;
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .videoHolder {
+        flex-direction: column;
+    }
 }
 
 li {
@@ -142,6 +157,7 @@ li {
 .bulletPoints {
     padding-top: 50px;
     padding-left: 50px;
+    padding-bottom: 30px;
 }
 
 .bottom {
@@ -301,7 +317,7 @@ img {
 .universities {
     margin-left: -50px;
     margin-right: -50px;
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 10px 0px;
     background-color: #F2F1F0;
     overflow: hidden;
@@ -324,7 +340,7 @@ img {
 
 .scrolling-container img {
     height: 80px; 
-    width: auto;
+    width: auto; 
 }
 
 @keyframes scrollLeft {
@@ -337,12 +353,55 @@ img {
 }
 
 #i {
-    padding-top: 200px;
+    padding-top: 30px;
     text-align: center;
 }
 
 .missionStatement {
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 50px 200px ;
+}
+
+.socialTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.contactSocialMedia {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.socialMediaRight {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-left: 70px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.comparison {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px
+}
+
+.wrightStateImage {
+    height: 460px;
+    width: auto;
+}
+
+.comparison h2 {
+
 }
