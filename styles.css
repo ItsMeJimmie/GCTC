@@ -27,7 +27,8 @@ h2 {
 
 #first {
     text-align: center;
-    font-family: 'Boldonse', 'Courier New', Courier, monospace
+    font-family: 'Boldonse', 'Courier New', Courier, monospace;
+    font-size: 40px;
 }
 
 h3 {
@@ -114,7 +115,7 @@ button a {
 .nextSection {
     flex: 1;
     text-align: left;
-    background-color: #F2F1F0;
+    background-color: #F2F1F3;
 }
 
 .nextSectionContainer {
@@ -125,6 +126,8 @@ button a {
     text-align: center;
     margin-bottom: 10px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .introSection {
@@ -147,6 +150,10 @@ button a {
 @media (max-width: 768px) {
     .videoHolder {
         flex-direction: column;
+    }
+
+    #demonstrationTitle {
+        padding-top: 20px;
     }
 }
 
@@ -397,9 +404,25 @@ img {
     gap: 50px
 }
 
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column;
+    }
+}
+
 .wrightStateImage {
     height: 460px;
     width: auto;
+}
+
+.imageContainerWrightState {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .comparison h2 {
