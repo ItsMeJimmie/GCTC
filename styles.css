@@ -152,7 +152,7 @@ button a {
 }
 
 .videoHolder video {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: contain;
 }
@@ -212,7 +212,7 @@ li {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 label {
@@ -347,6 +347,14 @@ img {
     font-family: 'Boldonse', 'Courier New', Courier, monospace;
 }
 
+@media (max-width: 400px) {
+    .uniTitle {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}
+
 .scrolling-container {
     display: flex;
     gap: 130px;
@@ -397,20 +405,8 @@ img {
 
 .contactSocialMedia {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-}
-
-.socialMediaRight {
-    display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    margin-left: 70px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+    flex: 1;
 }
 
 .comparison {
