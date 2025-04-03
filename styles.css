@@ -53,13 +53,13 @@ h5 {
     background-color: #046A38;
     color: white;
     text-align: center;
-    padding: 20px;
     box-sizing: border-box; 
     z-index: 10;
 }
 
 .topGroup {
     display: flex;
+    align-items: center;
 }
 
 .headerImage {
@@ -93,10 +93,12 @@ h5 {
     cursor: pointer;
     border-radius: 5px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .buttonContainer button:hover {
     background-color: #CBA052;
+
 }
 
 button a {
@@ -142,12 +144,20 @@ button a {
     flex-direction: row;
     align-items: center;
     padding-bottom: 5px;
+    text-align: center;
     position: relative;
     z-index: 1;
     padding-top: 30px;
+    max-width: 100%;
 }
 
-@media (max-width: 768px) {
+.videoHolder video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
     .videoHolder {
         flex-direction: column;
     }
@@ -285,7 +295,7 @@ img {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -369,6 +379,15 @@ img {
     padding: 50px 200px ;
 }
 
+@media (max-width: 800px) {
+    
+    .missionStatement {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+}
+
 .socialTitleContainer {
     display: flex;
     flex-direction: row;
@@ -404,9 +423,10 @@ img {
     gap: 50px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .comparison {
         flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -425,6 +445,20 @@ img {
     z-index: 1;
 }
 
-.comparison h2 {
+@media (max-width: 800px) {
+    .wrightStateImage{
+        height: 330px;
+    }
+}
 
+@media (max-width: 600px) {
+    .wrightStateImage{
+        height: 200px;
+    }
+}
+
+@media (max-width: 348px) {
+    .wrightStateImage{
+        height: 150px;
+    }
 }
