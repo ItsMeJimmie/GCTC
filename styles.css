@@ -124,6 +124,10 @@ button a {
     padding: 50px;
 }
 
+.nextSectionContainer .introSection {
+    padding:  20px 20px;
+}
+
 .introP {
     text-align: center;
     margin-bottom: 10px;
@@ -279,13 +283,11 @@ img {
     width: 128px;
 }
 
-/* Default: Show navigation */
 .nav-menu {
     display: flex;
     gap: 10px;
 }
 
-/* Hamburger menu icon */
 .hamburger {
     display: none;
     font-size: 30px;
@@ -294,7 +296,6 @@ img {
     padding: 10px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 1000px) {
     .nav-menu {
         display: none;
@@ -419,10 +420,27 @@ img {
     gap: 50px
 }
 
+.comparison2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 @media (max-width: 1000px) {
     .comparison {
         flex-direction: column;
         text-align: center;
+    }
+
+    .comparison2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .comparison2 h2 {
+        padding-top: 50px;
     }
 }
 
