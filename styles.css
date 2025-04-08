@@ -41,6 +41,10 @@ h4 {
     font-family: 'Lato', 'Courier New', Courier, monospace;
 }
 
+#h4Specific {
+    text-align: center;
+}
+
 h5 {
     font-size: 20px;
     font-family: 'Lato', 'Courier New', Courier, monospace;
@@ -70,7 +74,7 @@ h5 {
 }
 
 .spacer {
-    padding-right: 350px;
+    padding-right: 200px;
 }
 
 .seperator {
@@ -78,7 +82,7 @@ h5 {
     background-color: #CBA052;
 }
 
-.buttonContainer {
+.h1Container {
     margin-top: 10px; 
     padding-left: 5px;
 }
@@ -475,4 +479,47 @@ img {
     .wrightStateImage{
         height: 150px;
     }
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.profiles img {
+    padding-bottom: 5px;
+    height: 320px;
+    width: 320px;
+}
+
+.profileInformation {
+    display: flex;
+    flex-direction: column;
+}
+
+.Nick h3, .Jimmie h3, .Kristin h3 {
+    font-family: 'Boldonse', 'Courier New', Courier, monospace;
+}
+
+
+.Jimmie p, .Kristin p, .Nick p {
+    font-family: 'Lato', 'Courier New', Courier, monospace;
+    padding-left: 20px;
+}
+
+.Jimmie, .Nick {
+    padding-bottom: 200px;
+}
+
+#profileDescription {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+
 }
