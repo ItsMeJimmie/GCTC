@@ -163,6 +163,8 @@ button a {
     width: 70%;
     height: auto;
     object-fit: contain;
+    border-radius: 15px; 
+    overflow: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -300,7 +302,7 @@ img {
     padding: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -308,7 +310,7 @@ img {
         position: absolute;
         top: 80px;
         right: 0;
-        width: 200px;
+        width: 220px;
         padding: 10px;
         border-radius: 5px;
     }
@@ -329,11 +331,6 @@ img {
     .nav-menu.show {
         display: flex;
     }
-}
-
-.groupPhoto {
-    height: 320px;
-    width: 320px;
 }
 
 .universities {
@@ -451,6 +448,7 @@ img {
 .wrightStateImage {
     height: 460px;
     width: auto;
+    border-radius: 10px;
 }
 
 .imageContainerWrightState {
@@ -481,45 +479,30 @@ img {
     }
 }
 
-.profiles {
-    display: flex;
-    flex-direction: column;
-}
-
 .profileContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.profiles img {
-    padding-bottom: 5px;
-    height: 320px;
-    width: 320px;
-}
-
-.profileInformation {
+.Nick {
     display: flex;
     flex-direction: column;
 }
 
-.Nick h3, .Jimmie h3, .Kristin h3 {
-    font-family: 'Boldonse', 'Courier New', Courier, monospace;
+.Jimmie {
+    display: flex;
+    flex-direction: column;
 }
 
-
-.Jimmie p, .Kristin p, .Nick p {
-    font-family: 'Lato', 'Courier New', Courier, monospace;
-    padding-left: 20px;
+.Kristin {
+    display: flex;
+    flex-direction: column;
 }
 
-.Jimmie, .Nick {
-    padding-bottom: 200px;
+@media (max-width: 1120px) {
+    .profileContainer{
+        flex-direction: column;
+    }
 }
 
-#profileDescription {
-    padding-bottom: 10px;
-}
-
-@media (max-width: 800px) {
-
-}
